@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Tämä on teksti johon voit kokeilla värin vaihto (värin vaihto timii vain kerran eli kun vaihdat värin ei voi vaihtaa sitä takaisin)</p>
+
+<button onclick="document.body.style.color = 'rgb(0, 0, 255)'">
+  paina tästä vaihtaaksesi tekstin väri
+</button>
+
+<p>painamalla alapuolella olevasta nappulasta vaihdat tämän tekstin</p>
+
+<button type="lause" onclick="myFunction()">kokeile lauseen vaihtoa</button>
+
+ <script>
+    function myFunction() {
+      document.getElementById("lause").innerHTML = "vaihdettu lause";
+    }
+  </script>
+</head>
+
+<p id="lause">lause</p>
+
+<p>var on tapa määritellä muuttuja</p>
+<p>let on uudempi tap määritellä muuttuja</p>
+<p>const on tapa jolla määritellään muuttujia tai osoittimia, joiden arvo ei voi muuttua niiden määrittelyn jälkeen</p>
+
+<p id="kokeilu"></p>
+
+<script>
+luku = 16;
+let greeting;
+if (luku > 18) {
+  greeting = "täysi-ikäinen";
+} else if (luku < 18) 
+  greeting = "alaikäinen";
+
+document.getElementById("kokeilu").innerHTML = greeting;
+</script>
+
+<p id="loop"></p>
+
+<script>
+let text = "";
+
+let i = 1;
+while (i < 6) {
+  text += "huhuu?! " + "<br>";
+  i++;
+}
+
+document.getElementById("loop").innerHTML = text;
+</script>
+
+<p id="lista"></p>
+
+<script>
+const eläimet = ["koira", "kissa", "hevonen", "hiiri", "marsu"];
+let len = eläimet.length;
+
+let teksti = "";
+for (let i = 0; i < len; i++) {
+  teksti += eläimet[i] + "!" + "<br>";
+}
+
+document.getElementById("lista").innerHTML = teksti;
+</script>
+
+<p id="tervehdys"></p>
+
+<script>
+function tervehdi(etunimi, sukunimi) {
+  return "hei " + etunimi + " " + sukunimi;
+}
+
+let tervehdys = tervehdi("Valtteri", "Ståhl");
+document.getElementById("tervehdys").innerText = tervehdys;
+</script>
+
+</body>
+</html>
