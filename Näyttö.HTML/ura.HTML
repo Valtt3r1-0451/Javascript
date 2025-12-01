@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #343333;
+  font-family: sans-serif;
+}
+
+.header {
+  height: 100px;
+  position: relative;
+}
+
+.header li:active {
+  border: 3px solid white;
+}
+
+div p {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+ul li a:hover {
+  background-color: #ff7b00;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 30px 30px;
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #3c3c3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul h1 {
+  position: absolute;
+  left: 15px;
+  color: white;
+  font-size: xxx-large;
+}
+
+h4 {
+  font-size:43px;
+  margin-left: 7%;
+  margin-top: 5%;
+  margin-bottom: 0%;
+  color: #343333;
+}
+
+.Adiv {
+  border: 4px solid #ff7b00;
+  background-color: white;
+  color: black;
+  text-align: left;
+  width: 70%;
+  height: 300%;
+  font-size: 27px;
+  margin-left: 15%;
+  margin-top: 5%;
+  float: left;
+  margin-bottom: 0%;
+}
+
+.Bdiv {
+  background-color: #9b9999;
+  color: white;
+  text-align: left;
+  width: 1071px;
+  height: 300%;
+  font-size: 175%;
+  margin-left: 15%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  float: left;
+}
+
+#tekstialue_ET {
+  resize: none;
+  height: 50px;
+  width: 250px;
+  font-size: large;
+  margin-left: 5%;
+  margin-bottom: 30px;
+  border: 3px solid #ff7b00;
+  position: relative;
+}
+
+
+#tekstialue_SU {
+  resize: none;
+  height: 50px;
+  width: 250px;
+  font-size: large;
+  margin-left: 5%;
+  margin-top: 0%;
+  border: 3px solid #ff7b00;
+  position: relative;
+}
+
+
+#tekstialue_PN {
+  resize: none;
+  height: 50px;
+  width: 250px;
+  font-size: large;
+  margin-right: 30%;
+  margin-top: -30px;
+  border: 3px solid #ff7b00;
+  float: right;
+  position: relative;
+}
+
+
+#tekstialue_SÄ {
+  resize: none;
+  height: 50px;
+  width: 250px;
+  font-size: large;
+  margin-right: 30%;
+  margin-top: -150px;
+  border: 3px solid #ff7b00;
+  float: right;
+  position: relative;
+}
+
+#tekstialue_HK {
+  resize: none;
+  height: 75px;
+  width: 250px;
+  font-size: large;
+  margin-left: 20%;
+  margin-top: 0%;
+  border: 3px solid #ff7b00;
+  position: relative;
+}
+
+#tekstialue_HK:hover {
+  border: 5px solid #ff7b00;
+}
+
+#lähetä {
+  background-color: #ff7b00;
+  border: none;
+  height: 50px;
+  width: 33%;
+  margin-top: 8%;
+  margin-left: 33%;
+}
+
+#lähetä:hover  {
+  background-color: rgb(255, 178, 95);
+}
+
+</style>
+
+<div class="header">
+<ul>
+  <h1>JyCon</h1>
+  <li><a href="file:///c%3A/Users/valtt/N%C3%A4ytt%C3%B6.HTML/INDEX.HTML">Etusivu</a></li>
+  <li><a href="file:///c%3A/Users/valtt/N%C3%A4ytt%C3%B6.HTML/Palvelut.HTML">Palvelut</a></li>
+  <li><a href="file:///c%3A/Users/valtt/N%C3%A4ytt%C3%B6.HTML/osaaminen.HTML">Osaaminen</a></li>
+  <li><a href="file:///c%3A/Users/valtt/N%C3%A4ytt%C3%B6.HTML/ura.HTML">Ura</a></li>
+  <li><a href="file:///c%3A/Users/valtt/N%C3%A4ytt%C3%B6.HTML/yhteystiedot.HTML">Yhteystiedot</a></li>
+</ul>
+
+
+<div class="Adiv">
+  <p>Haluatko kasvaa ohjelmistoalan ammattilaiseksi? Jycon tarjoaa mahdollisuuden oppia oikeissa asiakasprojekteissa.</p>
+  </div>
+<div class="Bdiv">
+<form action="send.php" method="post">
+  <label for="Enimi"></label><br>
+  <input placeholder="Etunimi" 
+  <textarea id="tekstialue_ET"></textarea><br>
+  <input placeholder="Sukunimi"
+  <textarea id="tekstialue_SU"></textarea><br>
+  <input placeholder="Puhelin numero" 
+  <textarea id="tekstialue_PN"></textarea><br>
+  <input placeholder="Sähköposti" 
+  <textarea id="tekstialue_SÄ"></textarea><br>
+  <input placeholder="Hakemus kirje" 
+  <textarea id="tekstialue_HK"></textarea><br> 
+  <input type="submit" value="Lähetä" id="lähetä">
+</form>
+  </div>
+
+</body>
+</html>
